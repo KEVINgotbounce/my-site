@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div style="background: #fafafa; padding-bottom: 275px; display: block; clear: both; border-bottom: 1px solid #eee;">
+	<section style="max-width: 800px; padding: 115px 0; margin: 0 auto;">
+			<h1 style=" text-align: center;">{% block title %}Never send a broken HTML email ever again.{% endblock title %}</h1>
+			<div style="clear: both;">
+			<div style="float: left; width: 50%; margin-top: 35px;">
+				<p class="sub">Stop spending hours <em>struggling</em> to get your HTML emails to render correctly in email clients like Outlook and Gmail. Learn how to build bulletproof emails that won't break in even the worst email clients and master the dark art of troubleshooting HTML email from one of the world's best email designers.</p>
+			</div>
+			<div style="float: right; width: 40%; margin-left: 5%;">
+				<img src="/static/images/email-design-handbook-cover.png" style="max-width: 100%; margin-top: 25px;"/>
+
+			</div>
+		</div>
+	</section> <!--wrapper-->
+</div>
+
+
+<section id="wrapper">
+	{% include "cta-book.html" %}
+
+	<h3>Kiss rendering problems with email clients like Outlook and Gmail goodbye.</h3>
+	<p>
+		Ever bang your head against your desk because of problematic email clients like Outlook and Gmail? We've all been there.
+	</p>
+	<p>
+		The Email Design Handbook will teach you the ins and outs of email client quirks and arm you with fixes for them. Learn how to quickly diagnose and troubleshoot common HTML email rendering problems and drastically reduce your QA and testing time.
+	</p>
+	<p>
+		This is the playbook <em>I wish</em> existed when I started designing and developing HTML emails.
+	</p>
+	<h3>Spend less time building and testing your HTML emails.</h3>
+	<p>
+		Building and testing HTML emails is one of the most <em>painstakingly</em> tedious tasks for a designer or developer. Learn the processes and tools the best email designers in the world use to optimize your email design, development, and testing workflow. This book will help you spend less time testing your emails and more time designing them.
+	</p>
+	<h3>Code emails like it&rsquo;s 2015, not 1998.</h3>
+	<p>
+		Take your HTML emails to the next level with the most advanced email design techniques out there. Learn how to target specific email clients to progressively enhance with HTML5 and CSS3 that will delight and surprise your email subscribers.
+	</p>
+	<h3>What will The Email Design Handbook cover?</h3>
+	<p>
+		Here is just a preview of the topics the book will cover:
+	</p>
+	<ul class="list">
+		<li>HTML & CSS Support in Email</li>
+		<li>Email Client Quirks</li>
+		<li>Modular Email Design</li>
+		<li>Typography & Web Fonts</li>
+		<li>Images</li>
+		<li>Links</li>
+		<li>Bulletproof Buttons</li>
+		<li>Preheader Text</li>
+		<li>Responsive Email Design</li>
+		<li>Email Client Targeting</li>
+		<li>Progressive Enhancement</li>
+		<li>Tools & Processes to Optimize Your Workflow</li>
+	</ul>
+
+</section>
+
+{% endblock content %}

@@ -1,0 +1,665 @@
+/*=========================================
+Reset
+=========================================== */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} 
+*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.group:before,
+.group:after { content: ""; display: table;} 
+.group:after { clear: both;}
+.group { zoom: 1;}
+
+
+::selection {background:#f0f0f0;};
+
+/*=========================================
+Base
+=========================================== */
+body {
+	font:16px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#777;
+	-webkit-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.left {
+	float: left;
+}
+
+.w50 {
+	width: 50%;
+}
+
+#wrapper, .wrapper {
+	max-width:675px;
+	margin:0 auto;
+}
+
+#wrapper {
+	padding:75px 0;
+}
+
+#wrapper img, .wrapper img, #wrapper1 img {
+	width: 100%;
+	max-width: 100%;
+	border-radius: 3px;
+}
+
+
+#wrapper1 p.wrap, #wrapper1 figure, #wrapper1 pre, #wrapper1 article, #wrapper1 h1, #wrapper1 h2, #wrapper1 h3, #wrapper1 h4, #wrapper1 h5, #wrapper1 h6 {
+	max-width: 675px;
+	margin: 50px auto;
+}
+
+iframe[id^='twitter-widget-']{
+	width:100% !important;
+	max-width: 675px !important;
+	margin: 0 auto !important;
+}
+
+#wrapper1 blockquote, #wrapper1 iframe, #wrapper1 .builder-embed-wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*#wrapper1 .builder-embed-wrapper {
+	height: 575px !important;
+}*/
+
+
+.firstcharacter {
+	float: left;
+	color: #333;
+	font-size: 100px;
+	line-height: 85px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-left: 3px;
+	font-family: Georgia; }
+
+#header {
+	position:relative;
+}
+
+#avatar {
+	display:block;
+	width:125px;
+	height:125px;
+	border-radius:125px;
+	margin: 0 auto;
+	margin-bottom:30px;
+	background: url('/static/images/me-now.jpg') no-repeat;
+}
+
+#avatar:hover {
+	background: url('/static/images/me-then.jpg') no-repeat;
+	cursor: pointer;
+}
+
+ul.list {
+	margin-left: 50px;
+}
+
+ul.list li {
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	list-style-type: square;
+	font-weight: 200;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.nav {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	position: fixed;
+	background: #fff;
+	z-index: 9999;
+}
+
+#nav {
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#nav li {
+	display: inline-block;
+	padding: 14px 0;
+}
+
+#nav li a {
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 11px;
+	color: #333;
+	padding: 14px 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-decoration:none;
+	border-bottom:none;
+}
+
+#nav li a:hover {
+	border-bottom: 2px solid #666;
+	padding-bottom: 16px;
+}
+
+.about {
+	background: url(/static/images/kevin3.jpg) right no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+	min-height: 500px;
+}
+
+#post-list li {
+	list-style-type: none;
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	margin: 30px 0;
+}
+
+hr {
+	display: block;
+	border: none;
+	height: 1px;
+	margin: 40px auto;
+	background: #eee;
+}
+
+textarea:focus, input:focus{
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: #aaa;
+   font-weight: 200;
+   letter-spacing: 0;
+}
+
+article.cta-post {
+	padding-left: 25px;
+	border-left: 4px solid orange;
+	margin: 75px auto;
+	clear: both;
+}
+
+.mtop0 {
+	margin-top: 0;
+}
+
+.max600 {
+	max-width: 600px;
+}
+
+.input-text {
+	padding: 20px; 
+	border: 1px solid #ddd;
+	border-radius: 50px 0 0 50px;
+	width: 75%;
+	letter-spacing: -.04em;
+	font-size: 20px;
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	text-indent: 10px;
+}
+
+.input-submit {
+	color: #fff;
+	background: orange;
+	border-radius: 0 50px 50px 0;
+	padding: 20px;
+	border: 0;
+	letter-spacing: -.04em;
+	font-size: 20px;
+	font-family: 'Source Sans Pro';
+	font-weight: 700;
+	margin: 0 0 0 -5px;
+	width: 25%;
+	height: 67px;
+}
+
+.cta-bottom {
+	text-align: center;
+	border-top: 1px solid #eee;
+	background: #fafafa;
+	clear: both;
+}
+
+.margin-center {
+	margin: 0 auto;
+}
+
+.hero {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	text-align: center; margin: 0;
+	max-width: 675px;
+	padding: 75px 0;
+}
+
+.gradient-white {
+	position: absolute;
+	height: 500px;
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+	width: 100%;
+}
+
+.hero-bg {
+	background: url(/static/images/boston3.jpg) center no-repeat;
+	background-size: cover !important;
+	height: 500px;
+}
+
+.hero-desc {
+	text-align: left; padding: 0; margin-left: 15%;
+}
+
+.vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	text-align: center;
+	margin: 0;
+	max-width: 100%;
+}
+
+.post-title {
+	max-width: 1000px; margin: 0 auto;
+}
+
+/*=========================================
+Typography
+=========================================== */
+/*Accent color*/
+a {
+	text-decoration:none;
+	color:#333;
+	font-weight:200;
+	border-bottom: 1px solid #ccc;
+}
+
+a.title-link {
+	text-decoration:none;
+	color:#333;
+	font-weight:700;
+	border: 0;
+}
+
+a:hover {
+	color: #999;
+}
+
+a.title-link:hover {
+	color: #555;
+}
+
+b, strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	letter-spacing: -.04em;
+	color: #333;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 62px;
+	line-height: 62px;
+
+}
+
+h2 {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+h3 {
+	font-size: 36px;
+	line-height: 42px;
+	margin-top: 100px;
+}
+
+h4, h5, h6 {
+	font-size: 24px;
+	line-height: 24px;
+}
+
+figcaption {
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+	margin-top: 10px;
+}
+
+p {
+	 font-size: 24px;
+	 line-height: 32px;
+	 font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	 font-weight: 200;
+	 margin: 25px 0;
+	 color: #333;
+}
+
+p.sub {
+	font-size: 24px;
+	font-weight: 200;
+	color: #333;
+	margin-top: 10px;
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 36px;
+	margin-bottom: 35px;
+}
+
+p.contact {
+	 text-transform: uppercase;
+	 letter-spacing: 3px;
+	 color: #333;
+	 margin: 0;
+	 font-size: 13px;
+}
+
+p.white {
+	color: #fff;
+	margin: 0;
+}
+
+p.white a {
+	border: 0;
+	color: #fff;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.new {
+	background: orange;
+	padding: 5px;
+	color: #fff;
+	font-size: 7px;
+	text-transform: uppercase;
+	font-family: arial;
+	letter-spacing: 1px;
+	border-radius: 3px;
+	margin: 0;
+	display: inline-block;
+}
+
+.newsletter {
+	font-weight: 600;
+}
+
+.newsletter:hover {
+	border-bottom:0;
+}
+
+.event {
+	font-size: 14px;
+	font-style: italic;
+}
+
+.home {
+	position: absolute;
+	margin: -4px 0 0 -35px;
+	height: 25px;
+	width: 25px;
+}
+
+#nav li a.home-kevin {
+	border: 0;
+	font-family: 'Source Sans Pro',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	letter-spacing: -.04em;
+	text-transform: none;
+	font-size: 16px;
+}
+
+pre {
+	font-family: Menlo, Monaco, Courier;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	white-space: pre-wrap;
+	padding: 20px;
+	background-color: #333;
+	font-size: 14px;
+	overflow: auto;
+	border-radius: 3px;
+	margin-bottom: 25px;
+}
+
+blockquote.tweet a:hover:before {
+	content: url(/static/images/tweet2.png);
+	position: absolute;
+	margin: -5px 0 0 -35px;
+}
+
+.tweet a {
+	font-size: 48px;
+	padding: 10px 0;
+	line-height: 84px;
+	font-family: 'source sans pro';
+	font-weight: 700;
+	letter-spacing: -.04em;
+}
+
+#wrapper1 .quote-block {
+	max-width: 100%;
+	background: url(http://pages.litmus.com/l/31032/2014-04-01/x69h/31032/15544/jj1.jpg) no-repeat center;
+	padding: 75px 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	background-size: cover;
+	min-height: 450px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote {
+	max-width: 55%;
+	margin-left: 5%;
+}
+
+.quote-text {
+	font-size: 36px;
+	padding: 10px 0;
+	line-height: 48px;
+	font-family: 'source sans pro';
+	font-weight: 600;
+	letter-spacing: -.04em;
+	border: 0;
+	color: #fff;
+}
+
+.quote-open {
+	display: inline-block;
+	position: absolute;
+	margin: 10px 0 0 -45px;
+	font-size: 150px;
+	opacity: 0.3;
+}
+
+.author-avatar {
+	float: left; width: 28%;
+}
+
+.author-about {
+	float: right; width: 72%;
+}
+
+.author-block {
+	margin: 0 0 75px 0; display: block; float: left;
+}
+
+/*=========================================
+Footer
+=========================================== */
+
+footer {
+	border-top: 1px solid #eee;
+	text-align: center;
+	padding: 25px 0;
+}
+
+footer p {
+	font-size: 14px;
+	margin: 0;
+	line-height: 16px;
+}
+
+
+
+/*=========================================
+Media Queries
+=========================================== */
+
+@media screen and (max-width: 768px) {
+		#menu {
+			display: block;
+			font-size:1em;
+			padding: 8px 10px 8px 0;
+			text-align: right;
+			font-family: 'source sans pro';
+			font-weight: 700;
+			letter-spacing: -.04em;
+			float: right;
+			width: 50%;
+			line-height: 25px;
+		}
+		#menu:after {
+			content: '\2630 \0020 Menu';
+		}
+		#nav.js {
+			display: none;
+			clear: both;
+		}
+		#nav ul {
+			width:100%;
+		}
+		#nav li {
+			width:100%;
+			border-right:none;
+			display: block;
+		}
+		#nav li:hover {
+			background: #fafafa;
+		}
+		#nav li a {
+			display: block;
+			padding: 0;
+		}
+		#nav li a:hover {
+			border: 0;
+			padding: 0;
+		}
+		#kevin-mandeville:after {
+			content: '@KevinMandeville';
+			font-family: 'source sans pro';
+			font-weight: 700;
+			display: inline-block;
+			letter-spacing: -.04em;
+			float: left;
+			padding: 8px 0 8px 10px;
+			line-height: 25px;
+		}
+		#nav li.hide {
+			display: none;
+		}
+		.avatar-kevin {
+			content: url(/static/images/kevin-avatar.png);
+			width: 25px;
+			float: left;
+			margin: 8px 0 8px 10px;
+			line-height: 25px;
+		}
+		
+}
+
+@media screen and (max-width: 540px) {
+#wrapper { padding:40px; }
+#header { margin-bottom: 40px; }
+}
+
+@media screen and (max-width:480px) {
+
+		#wrapper { padding:20px; }
+		#header { margin-bottom: 20px; }
+		h1 {
+			font-size: 36px; line-height: 36px;
+		}
+		.about, .hero, .gradient-white {
+			height: 300px;
+			min-height: 300px;
+		}
+		.about, .hero {
+			padding: 0 5%;
+			margin-bottom: 25px;
+		}
+		.about, .hero {
+			background: none !important;
+		}
+		p, ul.list li {
+			font-size: 18px;
+			line-height: 22px;
+		}
+		#wrapper1 p.wrap, #wrapper1 figure, #wrapper1 pre, #wrapper1 article, #wrapper1 h1, #wrapper1 h2, #wrapper1 h3, #wrapper1 h4, #wrapper1 h5, #wrapper1 h6, #wrapper1 iframe, #wrapper1 .builder-embed-wrapper, #wrapper1 blockquote.tweet {
+			width: 90%;
+			margin: 25px auto;
+		}
+		.firstcharacter {
+			font-size: 60px;
+			line-height: 60px;
+			padding: 0 10px 0 0;
+		}
+		p.contact {
+			font-size: 10px;
+		}
+		blockquote.tweet {
+			text-align: left;
+		}
+		.tweet a {
+			font-size: 26px;
+			line-height: 46px;
+			padding: 5px 0;
+		}
+		blockquote.tweet a:hover:before {
+			content: none;
+		}
+
+		iframe[id^='twitter-widget-']{
+			width:90% !important;
+		}
+
+		#wrapper1 .quote-block {
+			background: #333;
+			padding: 50px 0;
+			min-height: 0;
+		}
+
+		.quote {
+			width: 80%;
+			margin: 0 auto;
+			max-width: none;
+		}
+		.quote-text {
+			font-size: 26px;
+			line-height: 36px;
+		}
+		.author-avatar {
+			display: none;
+		}
+		.author-about {
+			width: 100%;
+		}
+		.author-block {
+			margin-top: 25px;
+		}
+
+}

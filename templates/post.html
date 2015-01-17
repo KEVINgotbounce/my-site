@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock title %}
+{% block content %}
+
+<div class="gradient-white"></div>
+
+<div class="about hero-bg" style="background: url(/static/images/jordan-bg.jpg) center no-repeat;">
+	<section class="group vertical-center">
+		<article class="post">
+			<header class="post-title">
+				<h1><a href="https://twitter.com/share" class="title-link" target="_blank" data-via="KevinMandeville" data-count="none">{{ title }}</a></h1>
+				<br><br>
+				<p class="contact">Posted on {{ date|date:"M j, 20y" }}</p>
+			</header>
+		</article>
+	</section>
+</div>
+
+
+<section id="wrapper1" class="group">
+	{% block body %}
+	This is where the post contents is.
+	{% endblock body %}
+</section>
+
+<section id="wrapper" class="group">
+
+{% include "author.html" %}
+
+{% include "cta-post.html" %}
+
+{% include "disqus.html" %}
+
+</section> <!--wrapper-->
+
+{% endblock content %}

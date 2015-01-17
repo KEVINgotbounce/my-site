@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="about">
+	<section class="hero">
+		<header id="header" class="hero-desc">
+			<h1>{% block title %}Hello, I'm Kevin.{% endblock title %}</h1>
+			<p class="sub">I am a designer in Boston, MA making email better at <a href="http://litmus.com" target="_blank">Litmus</a>. I am also the author of <a href="#">The Email Design Handbook</a> and co-host of <a href="#">The Email Design Podcast</a>.</p>
+			<p class="contact"><a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a></p>
+			<p class="contact">kevin@litmus.com</p>
+		</header> <!--header-->
+	</section> <!--wrapper-->
+</div>
+
+<section id="wrapper" style="text-align: center;">
+	<h2>Recent Blog Posts</h2>
+	<ul id="post-list">
+	{% for blog in blog %}
+	<li> 
+		<a href='/{{ blog.path }}'>{{ blog.title }}</a> {{ blog.headline }}
+	</li>
+	{% endfor %}
+	<a href="#">Read more on my blog &rarr;</a>
+</ul> <!--post-list-->
+</section>
+
+
+{% endblock content %}

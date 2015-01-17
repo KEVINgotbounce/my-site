@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	
+	<title>Kevin Mandeville is a designer in Boston, MA.</title>
+	
+</head>
+
+<body>
+<section class="nav">
+	<ul id="nav">
+		<li class="hide"><a href="/index.html" class="home-kevin"><img src="/static/images/kevin-avatar.png" class="home">@KevinMandeville</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="http://dribbble.com/kevinmandeville" target="_blank">Portfolio</a></li>
+		<li><a href="/email-design-book">Book</a></li>
+		<li><a href="http://emaildesignpodcast.com" target="_blank">Podcast</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/newsletter" class="newsletter">Newsletter <div class="new">New</div></a></li>
+	</ul>
+</section>
+  
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
+
+<div style="position: absolute;height: 100vh;background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);width: 100%;"></div>
+	<div class="about" style="background: url(http://www.reactiongifs.com/r/wth.gif) center no-repeat; background-size: cover; height: 100vh;">
+		<section id="wrapper" class="group" style="position: relative;top: 50%; text-align: center; margin: 0; max-width: 100%;">
+			<header id="header" style="max-width: 675px; margin: 0 auto;">
+				<h1>Where's the page, bro?</h1>
+				<p>Oh no! Looks like this page has moved. I didn't mean to leave you hanging like Vinnie here. Head to <a href="http://kevinmandeville.com">kevinmandeville.com</a> or hit me up <a href="http://twitter.com/KevinMandeville" target="_blank">@KevinMandeville</a> for major errors. Thanks!</p>
+			</header>
+		</section> 
+	</div>
+</div>
+
+
+  
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script type="text/javascript">
+	$("#nav").addClass("js").before('<div class="left w50"><a href="/index.html"><div id="kevin-mandeville"></div></a></div><div id="menu"></div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+	</script>
+
+  
+
+ 	<section class="cta-bottom">
+	<article id="wrapper">
+		<h2>Get My Email Design Insights</h2>
+		<p>I'll deliver the latest tips, tricks, & hacks in email design & development right to your inbox. No spam, no bullsh*t. Expect nothing but kickass content to make your email design workflow better. Pinky promise.</p>
+		<form class="max600 margin-center" action="http://kevinmandeville.createsend.com/t/t/s/hjhhjl/" method="post">
+			<input class="input-text" placeholder="Enter your email address" id="fieldEmail" name="cm-hjhhjl-hjhhjl" type="email" required>
+			<input type="submit" value="Subscribe" class="input-submit">
+		</form>
+	</article>
+</section>
+	<footer>
+	<p>
+		Follow me <a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a>
+		&nbsp; | &nbsp;
+		<a href="http://bostonbuilt.org" target="_blank">Built in Boston</a> on <a href="http://cactusformac.com" target="_blank">Cactus</a>
+		&nbsp; | &nbsp;
+		© 2015 Kevin Mandeville
+	</p>
+</footer>
+</body>
+</html>

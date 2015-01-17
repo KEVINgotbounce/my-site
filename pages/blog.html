@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="wrapper" style="text-align: center;">
+	<h2>My Blog</h2>
+	<ul id="post-list">
+	{% for blog in blog %}
+	<li> 
+		<a href='/{{ blog.path }}'>{{ blog.title }}</a> {{ blog.headline }}
+	</li>
+	{% endfor %}
+	<a href="#">Read more on my blog &rarr;</a>
+	</ul> <!--post-list-->
+</section>
+
+
+{% endblock content %}

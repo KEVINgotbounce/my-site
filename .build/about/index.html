@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	
+	<title>Kevin Mandeville is a designer in Boston, MA.</title>
+	
+</head>
+
+<body>
+<section class="nav">
+	<ul id="nav">
+		<li class="hide"><a href="/index.html" class="home-kevin"><img src="/static/images/kevin-avatar.png" class="home">@KevinMandeville</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="http://dribbble.com/kevinmandeville" target="_blank">Portfolio</a></li>
+		<li><a href="/email-design-book">Book</a></li>
+		<li><a href="http://emaildesignpodcast.com" target="_blank">Podcast</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/newsletter" class="newsletter">Newsletter <div class="new">New</div></a></li>
+	</ul>
+</section>
+  
+
+<div class="gradient-white"></div>
+	<div class="about hero-bg">
+		<section id="wrapper" class="group vertical-center">
+			<header id="header">
+				<h1>My Story</h1>
+			</header>
+		</section> 
+	</div>
+</div>
+
+<section id="wrapper">
+	<p>My name is Kevin Mandeville, but I'm often called Pook for the <a href="http://www.pook.ca/products/pook/pook-toque" target="_blank">infamous winter hat I wear</a>. I'm a 25-year old product/web/email designer born and bred in Boston, MA.</p>
+	<p>I took an Intro to HTML course my freshman year of high school in 2004. I made text move across the screen with the &lt;marquee&gt; tag in my first class. It was love at first pixel. From there, I started pimping out MySpace profiles and taught myself how to code. I've haven't stopped since (coding that is, not MySpace =P).</p>
+	<p>I've since become immensely passionate about email design. I'm working hard to solve email design problems and make email better at <a href="http://litmus.com" target="_blank">Litmus</a>. I'm currently writing a self-published book titled <a href="http://emaildesignbook.com" target="_blank">The Email Design Handbook</a>. I also co-host <a href="http://emaildesignpodcast.com" target="_blank">The Email Design Podcast</a> with <a href="http://jasonrodriguez.com" target="_blank">Jason Rodriguez</a>. I've also written about and spoken at a few events on the topic of email design which you can see below.</p>
+	<p>Outside of email, I'm a <em>diehard</em> Boston sports fan and never miss a game. I'm pretty nifty at <a href="http://en.wikipedia.org/wiki/Streetball" target="_blank">streetball</a> and was probably a Harlem Globetrotter in a former life. I listen to a lot of pop punk and jazz music. <a href="http://soylent.me" target="_blank">Soylent</a> now accounts for ~70% of my diet&mdash;bacon, Baileys, A&W Cream Soda, and peanut butter make up the rest. If you didn't notice, I'm on team Oxford Comma. <a href="http://en.wikipedia.org/wiki/Cape_Cod" target="_blank">Cape Cod</a> is my summer vacation spot and I can never get enough skimboarding time each year.</p>
+	<p>I'm currently undergoing my <a href="http://www.daveramsey.com/bestsellers/home" target="_blank">Total Money Makeover</a> and can't wait to do my <a href="https://www.youtube.com/results?search_query=debt+free+scream" target="_blank">debt free scream</a> in 2017. I look forward to traveling the world after that.</p>
+	<p>If you are interested in having me:</p>
+	<ul class="list">
+		<li>Speak at an event</li>
+		<li>Write for a publication</li>
+		<li>Teach or consult your company on email design</li>
+		<li>School you on the blacktop</li>
+		<li>Explain what the hell that last point means</li>
+	</ul>
+	<p>You can always get in touch with me via <a href="mailto:kevin@litmus.com">email</a> or <a href="http://twitter.com/kevinmandeville" target="_blank">Twitter</a>.</p>
+
+	<h3>Writing</h3>
+	<p><a href="https://litmus.com/blog/a-bulletproof-guide-to-using-html5-and-css3-in-email" target="_blank">A Bulletproof Guide to Using HTML5 and CSS3 in Email</a> <br><span class="event">Litmus Blog December 2014</span></p>
+	<p><a href="http://www.creativebloq.com/net-magazine" target="_blank">HTML Emails with Grunt</a> <br><span class="event">net magazine October 2014</span></p>
+	<p><a href="https://litmus.com/blog/how-to-code-html5-video-background-in-email" target="_blank">How to Code HTML5 Video Background in Email</a> <br><span class="event">Litmus Blog April 2014</span></p>
+
+	<h3>Speaking</h3>
+	<p><a href="http://litmus.com/conference#designingemotion" target="_blank">Designing for Emotion in Email</a> <br><span class="event">The Email Design Conference 2014</span></p>
+	<p><a href="http://litmus.com/conference" target="_blank">Advanced Workshop</a> <br><span class="event">The Email Design Conference 2014</span></p>
+	<p><a href="http://frontenddesignconference.com/" target="_blank">How to Build Kickass Emails</a> <br><span class="event">Front End Design Conference 2014</span></p>
+
+	<h3>Contact Me</h3>
+	<p><a href="mailto:kevin@litmus.com">kevin@litmus.com</a></p>
+	<p><a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a></p>
+</section>
+
+
+
+  
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script type="text/javascript">
+	$("#nav").addClass("js").before('<div class="left w50"><a href="/index.html"><div id="kevin-mandeville"></div></a></div><div id="menu"></div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+	</script>
+
+  
+
+ 	<section class="cta-bottom">
+	<article id="wrapper">
+		<h2>Get My Email Design Insights</h2>
+		<p>I'll deliver the latest tips, tricks, & hacks in email design & development right to your inbox. No spam, no bullsh*t. Expect nothing but kickass content to make your email design workflow better. Pinky promise.</p>
+		<form class="max600 margin-center" action="http://kevinmandeville.createsend.com/t/t/s/hjhhjl/" method="post">
+			<input class="input-text" placeholder="Enter your email address" id="fieldEmail" name="cm-hjhhjl-hjhhjl" type="email" required>
+			<input type="submit" value="Subscribe" class="input-submit">
+		</form>
+	</article>
+</section>
+	<footer>
+	<p>
+		Follow me <a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a>
+		&nbsp; | &nbsp;
+		<a href="http://bostonbuilt.org" target="_blank">Built in Boston</a> on <a href="http://cactusformac.com" target="_blank">Cactus</a>
+		&nbsp; | &nbsp;
+		© 2015 Kevin Mandeville
+	</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
+
+<div style="position: absolute;height: 100vh;background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);width: 100%;"></div>
+	<div class="about" style="background: url(http://www.reactiongifs.com/r/wth.gif) center no-repeat; background-size: cover; height: 100vh;">
+		<section id="wrapper" class="group" style="position: relative;top: 50%; text-align: center; margin: 0; max-width: 100%;">
+			<header id="header" style="max-width: 675px; margin: 0 auto;">
+				<h1>{% block title %}Where's the page, bro?{% endblock title %}</h1>
+				<p>Oh no! Looks like this page has moved. I didn't mean to leave you hanging like Vinnie here. Head to <a href="http://kevinmandeville.com">kevinmandeville.com</a> or hit me up <a href="http://twitter.com/KevinMandeville" target="_blank">@KevinMandeville</a> for major errors. Thanks!</p>
+			</header>
+		</section> 
+	</div>
+</div>
+{% endblock %}

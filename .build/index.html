@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="/static/images/favicon.ico">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,200italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	
+	<title>Kevin Mandeville is a designer in Boston, MA.</title>
+	
+</head>
+
+<body>
+<section class="nav">
+	<ul id="nav">
+		<li class="hide"><a href="/index.html" class="home-kevin"><img src="/static/images/kevin-avatar.png" class="home">@KevinMandeville</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="http://dribbble.com/kevinmandeville" target="_blank">Portfolio</a></li>
+		<li><a href="/email-design-book">Book</a></li>
+		<li><a href="http://emaildesignpodcast.com" target="_blank">Podcast</a></li>
+		<li><a href="/blog">Blog</a></li>
+		<li><a href="/newsletter" class="newsletter">Newsletter <div class="new">New</div></a></li>
+	</ul>
+</section>
+  
+
+<div class="about">
+	<section class="hero">
+		<header id="header" class="hero-desc">
+			<h1>Hello, I'm Kevin.</h1>
+			<p class="sub">I am a designer in Boston, MA making email better at <a href="http://litmus.com" target="_blank">Litmus</a>. I am also the author of <a href="#">The Email Design Handbook</a> and co-host of <a href="#">The Email Design Podcast</a>.</p>
+			<p class="contact"><a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a></p>
+			<p class="contact">kevin@litmus.com</p>
+		</header> <!--header-->
+	</section> <!--wrapper-->
+</div>
+
+<section id="wrapper" style="text-align: center;">
+	<h2>Recent Blog Posts</h2>
+	<ul id="post-list">
+	
+	<li> 
+		<a href='/blog/what-web-developers-need-to-know-about-the-state-of-email-standards/index.html'>What Web Developers Need to Know About the State of Email “Standards”</a> 
+	</li>
+	
+	<li> 
+		<a href='/blog/5-predictions-for-email-design-in-2015.html'>5 Predictions for Email Design in 2015</a> 
+	</li>
+	
+	<li> 
+		<a href='/blog/getting-started.html'>Getting started</a> 
+	</li>
+	
+	<li> 
+		<a href='/blog/an-example-post.html'>An example post</a> 
+	</li>
+	
+	<a href="#">Read more on my blog &rarr;</a>
+</ul> <!--post-list-->
+</section>
+
+
+
+
+  
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script type="text/javascript">
+	$("#nav").addClass("js").before('<div class="left w50"><a href="/index.html"><div id="kevin-mandeville"></div></a></div><div id="menu"></div>');
+	$("#menu").click(function(){
+		$("#nav").toggle();
+	});
+	$(window).resize(function(){
+		if(window.innerWidth > 768) {
+			$("#nav").removeAttr("style");
+		}
+	});
+	</script>
+
+  
+
+ 	<section class="cta-bottom">
+	<article id="wrapper">
+		<h2>Get My Email Design Insights</h2>
+		<p>I'll deliver the latest tips, tricks, & hacks in email design & development right to your inbox. No spam, no bullsh*t. Expect nothing but kickass content to make your email design workflow better. Pinky promise.</p>
+		<form class="max600 margin-center" action="http://kevinmandeville.createsend.com/t/t/s/hjhhjl/" method="post">
+			<input class="input-text" placeholder="Enter your email address" id="fieldEmail" name="cm-hjhhjl-hjhhjl" type="email" required>
+			<input type="submit" value="Subscribe" class="input-submit">
+		</form>
+	</article>
+</section>
+	<footer>
+	<p>
+		Follow me <a href="http://twitter.com/kevinmandeville" target="_blank">@KevinMandeville</a>
+		&nbsp; | &nbsp;
+		<a href="http://bostonbuilt.org" target="_blank">Built in Boston</a> on <a href="http://cactusformac.com" target="_blank">Cactus</a>
+		&nbsp; | &nbsp;
+		© 2015 Kevin Mandeville
+	</p>
+</footer>
+</body>
+</html>
