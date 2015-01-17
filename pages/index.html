@@ -16,9 +16,9 @@
 <section id="wrapper" style="text-align: center;">
 	<h2>Recent Blog Posts</h2>
 	<ul id="post-list">
-	{% for blog in blog %}
-	<li> 
-		<a href='/{{ blog.path }}'>{{ blog.title }}</a> {{ blog.headline }}
+	{% for post in blog %}
+	<li>
+		<a href='/{{ post.path|cut:"/index.html" }}'>{{ post.title }}</a> {{ post.headline }}
 	</li>
 	{% endfor %}
 	<a href="#">Read more on my blog &rarr;</a>
